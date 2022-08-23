@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Form Verification with Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <header>Sign Up</header>
+
+        <form action="#">
+            <div class="entries email-div">
+                <div class="inp-div">
+                    <input type="email" placeholder="Enter your Email Address" class="email" >
+                </div>
+
+                <span class="error-msg">
+                    <i class='bx bx-error-circle error-icon'></i> 
+                    <p>Please enter a valid email address</p>
+                </span>
+            </div>
+
+            <div class="entries password-div">
+                <div class="inp-div ">
+                    <input type="password" placeholder="Create password" class="password" >
+                    <i class='bx bxs-hide eye-icon' ></i>
+                </div>
+
+                <span class="error-msg">
+                    <i class='bx bx-error-circle error-icon'></i> 
+                    <p>Please enter atleast 8 characters with number, symbol, small and capital letter</p>
+                </span>
+            </div> 
+
+            <div class="entries confirm-div">
+                <div class="inp-div ">
+                    <input type="password" placeholder="Confirm password" class="confirm" >
+                    <i class='bx bxs-hide eye-icon' ></i>
+                </div>
+
+                <span class="error-msg">
+                    <i class='bx bx-error-circle error-icon'></i> 
+                    <p>Password don't match</p>
+                </span>
+
+                <div class="entries btn">
+                    <button>Submit Now</button>
+                </div>
+            </div> 
+        </form>
+    </div>
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

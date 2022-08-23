@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #34568B;
+}
+
+.container{
+    /* position: relative; */
+    background-color: #fff;
+    width: 100%;
+    max-width: 370px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.container header{
+    font-size: 22px;
+    font-weight: 600;
+    color: #34568B; 
+}
+
+.container form{
+    margin-top: 40px;
+}
+
+form .entries .inp-div{
+    /* background-color: red; */
+    /* The position relative here, is to fix the eye icon into the input field perfectly */
+    position: relative;
+    height: 55px;
+    width: 100%;
+}
+
+form .entries .inp-div .eye-icon{
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 3px;
+}
+
+form .entries .inp-div input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding: 0 15px;
+}
+
+.entries .error-msg{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+/* For our error message to show */
+.invalid .error-msg{
+    display: flex;
+}
+
+.invalid input{
+    border-color: red!important;
+}
+
+.entries .error-msg:nth-child(2){
+    align-items: flex-start;
+    /* This is to put the error icon of the Create password field at the top rather than in the center */
+}
+
+.entries .error-msg .error-icon{
+    margin-right: 6px;
+    font-size: 15px;
+}
+
+form .entries{
+    margin-top: 20px;
+}
+
+.btn button{
+    height:45px;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    background-color: #34568B;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.btn button:hover{
+    background-color: #4675bf;
+    cursor: pointer;
+}
